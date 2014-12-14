@@ -1,0 +1,7 @@
+en:
+  SitemapDecorator:
+    SHOWINSITEMAP: 'Show in sitemap?'
+  SitemapPage:
+    DESCRIPTION: 'Displays a sitemap with all pages marked for display in the sitemap. A page of this page type can only be created once.'
+    PLURALNAME: 'Sitemap Pages'
+    SINGULARNAME: 'Sitemap Page'

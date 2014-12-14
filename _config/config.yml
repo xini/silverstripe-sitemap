@@ -1,0 +1,8 @@
+SiteTree:
+  extensions:
+    - SitemapSiteTreeExtension
+SitemapPage:
+  singular_name: 'Sitemap Page'
+  plural_name: 'Sitemap Pages'
+  description: 'Displays a sitemap with all pages marked for display in the sitemap. A page of this page type can only be created once.'
+  icon: 'sitemap/images/treeicons/sitemap.gif'
