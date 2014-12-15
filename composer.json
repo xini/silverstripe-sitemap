@@ -1,5 +1,5 @@
 {
-	"name": "florian.thoma/silverstripe-sitemap",
+	"name": "florian.thoma/sitemap",
 	"description": "sitemap page type",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe", "sitemap"],
