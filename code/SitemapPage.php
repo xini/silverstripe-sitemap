@@ -11,7 +11,12 @@ class SitemapPage extends Page {
 		
 	public function SitemapRootItems() {
 		$baseClass = ClassInfo::baseDataClass($this->owner->class);
-		$items = DataObject::get($baseClass, "\"{$baseClass}\".\"ParentID\" = 0 AND \"{$baseClass}\".\"ShowInSitemap\" = 1");
+		if (class_exists('Multisites')) {
+			$parent = $this->SiteID;
+		} else {
+			$parent = 0;
+		}
+		$items = DataObject::get($baseClass, "\"{$baseClass}\".\"ParentID\" = {$parent} AND \"{$baseClass}\".\"ShowInSitemap\" = 1");
 		return $items;
 	}
 	
