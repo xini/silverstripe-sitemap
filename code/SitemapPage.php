@@ -20,12 +20,6 @@ class SitemapPage extends Page {
 		return $items;
 	}
 	
-	public function canCreate($member = null) {
-		$canCreate = parent::canCreate($member);
-		$doesNotExist = (SitemapPage::get()->Count() < 1);
-		return ($canCreate && $doesNotExist);
-	}
-	
 }
  
 class SitemapPage_Controller extends Page_Controller {
