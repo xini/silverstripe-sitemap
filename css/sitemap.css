@@ -1,46 +1,32 @@
-	/* --- Application Lists ------------------------------------------------------------------------------*/
-	ul.listing { margin: 0; padding: 0; display: table; width: 100%; }
-	ul.listing li { float: left; width: 100%; margin: 2em 0 0 0; padding: 0 0 2em 0; list-style: none outside none; background-image: none; border-bottom: 1px solid #d9d9d9; }
-	ul.listing li.last { border-bottom: none; }
-	
-	ul.listing li h2,
-	ul.listing li h3,
-	ul.listing li h4 { margin: 0; }
-	
-	ul.listing li address,
-	ul.listing li p,
-	ul.listing li p.morelink { margin-top: 0.4em; }
-	ul.listing li p.description { margin-top: 0.6em; }
-	
-	h2.group { border-bottom: 2px solid #d9d9d9; padding-bottom: 0.2em; }
-	.content-box h2.group.first { margin-top: 0.8em; }
-	.content-box p.info { margin-top: 1.2em; }
-	
-	ul.listing .image { float: left; position: relative; }
-	ul.listing .image img { 
-		margin: 0;
-		border: none; 
-		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		box-shadow: none; 
-	}
-	ul.listing .content { padding-left: 145px; }
+ul.sitemap { 
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden;
+}
+ul.sitemap h2 {
+	font-size: 150%;
+}
+ul.sitemap li { 
+	margin: 0;
+	padding: 0;
+	list-style-type:none; 
+	overflow: hidden;
+	break-inside: avoid;
+}
+ul.sitemap ul { 
+	padding: 0; 
+	margin: 0;
+}
+ul.sitemap ul li {
+	margin: 1em 0 0 0;
+}
+ul.sitemap ul ul {
+	padding: 0 0 0 1.5em;
+} 
 
-	/* --- Sitemap -------------------------------------------------------------------------------------------*/
-	ul.listing.sitemap { margin-top: 1.5em; overflow: hidden;}
-	ul.listing.sitemap ul { display: block; overflow: hidden; margin: 0; }
-	ul.listing.sitemap li { margin: 1em 0 0 0; border-bottom: none; padding: 0; }
-	ul.listing.sitemap li a { 
-		display: block; 
-		width: 100%; 
-		border-bottom: 1px solid #284a8c; 
-		background-image: none; 
-		padding: 0; 
-		text-decoration: none; outline: 0 none;	
+@media screen and ( min-width: 48em ) {
+	ul.sitemap {
+	    column-count: 2;
+	    column-gap: 2em;
 	}
-	ul.listing.sitemap ul ul { margin: 0 0 0 1em; }
-	ul.listing.sitemap li li a { border-bottom: none; }
-	ul.listing.sitemap li li a:focus,
-	ul.listing.sitemap li li a:hover,
-	ul.listing.sitemap li li a:active { text-decoration:underline; outline: 0 none; }
-	ul.listing.sitemap li li li li a { font-weight: normal; }	
+}

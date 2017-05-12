@@ -1,8 +1,8 @@
-<% cached 'sitemap', CurrentMember.ID, List(Page).max(LastEdited) %>
+<% cached 'sitemap', ID, List(SiteTree).max(LastEdited), List(SiteTree).count() %>
 <% if SiteMapRootItems %>
-	<ul class="listing sitemap">
+	<ul class="sitemap">
 		<% loop SiteMapRootItems %>
-			<li>
+			<li class="item">
 				<h2><a href="$Link" title="$Title">$MenuTitle</a></h2>
 				<% if SiteMapChildren %>
 					<ul>

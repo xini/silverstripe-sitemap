@@ -5,5 +5,4 @@
 	<% end_cached %>
 	<% include SiteMap %>
 	$Form
-	$PageComments
 </div>

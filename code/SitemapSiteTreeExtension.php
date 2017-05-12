@@ -17,12 +17,6 @@ class SitemapSiteTreeExtension extends SiteTreeExtension {
 			'ShowInSearch'
 		);
 		
-		// Apply Translatable modifications
-		if ($this->owner->hasExtension('Translatable')) {
-        	$this->owner->applyTranslatableFieldsUpdate($fields, 'updateSettingsFields');
-		}
-		
-		
 	}
 	
 	public function SiteMapChildren() {
