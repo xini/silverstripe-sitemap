@@ -1,0 +1,8 @@
+mi:
+  SitemapDecorator:
+    SHOWINSITEMAP: 'Whakaaturia i roto i te maherepae?'
+  SitemapPage:
+    DESCRIPTION: 'Whakaaturia ai te maherepae ki ngā whārangi katoa tohua hoki whakaatu i roto i te maherepae.'
+    PLURALNAME: 'Whārangi Mahere'
+    SINGULARNAME: 'Whārangi Mahere'
+    SITEMAPTEMPLATE: 'Tātauira Mahere'

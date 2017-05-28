@@ -2,6 +2,6 @@ de:
   SitemapDecorator:
     SHOWINSITEMAP: 'In Sitemap zeigen?'
   SitemapPage:
-    DESCRIPTION: 'Zeigt eine Sitemap mit allen Seiten die zur Anzeige in der Sitemap markiert sind. Es kann nur eine Seite dieses Typs erstellt werden.'
+    DESCRIPTION: 'Zeigt eine Sitemap mit allen Seiten die zur Anzeige in der Sitemap markiert sind.'
     PLURALNAME: 'Sitemap Seiten'
     SINGULARNAME: 'Sitemap Seite'
