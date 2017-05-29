@@ -75,9 +75,9 @@ The following query strings can be used in the task:
 Name     | Value    | Description
 -------- | -------- | -------------------------------------------------------------
 enable   | 0, false | Check all unchecked Pages "Show in Sitemap" setting
-         | 1, true  | Uncheck all checked Pages "Show in Sitemap" setting *Default*
+enable   | 1, true  | Uncheck all checked Pages "Show in Sitemap" setting *Default*
 publish  | 0, false | Save affected pages as Draft *Default*
-         | 1, true  | Publish the affected pages
+publish  | 1, true  | Publish the affected pages
 
 ## License
 
