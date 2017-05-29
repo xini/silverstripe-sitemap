@@ -5,7 +5,7 @@
 
 ## Overview
 
-Adds a page type that automatically builds a sitemap from the view tree. 
+Adds a page type that automatically builds a sitemap from the view tree based on templates.
 
 The module adds a new checkbox to the Settings tab of each page, where visibility of the page in the sitemap can be controlled.
 
@@ -23,7 +23,18 @@ composer require innoweb/silverstripe-sitemap dev-master
 ```
 or download or git clone the module into a ‘sitemap’ directory in your webroot.
 
-Then run dev/build.
+Then run `dev/build`.
+
+## Configuration
+
+Sitemap templates are stored in `/sitemap/templates/sitemap`.
+
+You can specify the default template to select on the SitemapPage or the default `SitemapDefault` will be selected.
+
+```YAML
+SitemapPage:
+  default_template: 'SitemapContentPreview'
+```
 
 ## License
 
