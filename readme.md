@@ -31,7 +31,7 @@ Then run `dev/build`.
 By default the Sitemap will render to the `$Sitemap` variable in the Content field. If the variable is ommitted then the Sitemap will render to the `$Form` variable.
 
 ### Templates
-Sitemap templates are stored in `/sitemap/templates/sitemap`. Templates only apply to Sitemap Pages.
+Sitemap templates are stored in the `/sitemap/templates/sitemap` folder. Templates only apply to Sitemap Pages.
 
 You can specify the default template to select on the SitemapPage by adding the following to your `app.yml` file.
 
@@ -40,11 +40,21 @@ SitemapPage:
   default_template: 'SitemapContentPreview'
 ```
 
-If the `default_template` is not specified then the default `SitemapDefault` template will be used.
+If the `default_template` is not specified then the `SitemapDefault` template will be used.
+
+## Templates Syntax
+The sitemap can additionally be rendered in a Template by using the following syntax.
+
+```php
+<% include Sitemap %>
+```
 
 ## License
 BSD 3-Clause License, see [License](license.md)
+
 Copyright Florian Thoma
+
 Contributions by Stewart Cossey
+
 
 
