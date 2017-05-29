@@ -1,4 +1,4 @@
-# SilverStripe Social Metadata
+# SilverStripe Sitemap Module
 
 [![Version](http://img.shields.io/packagist/v/innoweb/silverstripe-sitemap.svg?style=flat-square)](https://packagist.org/packages/innoweb/silverstripe-sitemap)
 [![License](http://img.shields.io/packagist/l/innoweb/silverstripe-sitemap.svg?style=flat-square)](license.md)
@@ -28,9 +28,11 @@ Then run `dev/build`.
 ## Sitemap Pages
 
 ### Sitemap Output
+
 By default the Sitemap will render to the `$Sitemap` variable in the Content field. If the variable is ommitted then the Sitemap will render to the `$Form` variable.
 
 ### Templates
+
 Sitemap templates are stored in the `/sitemap/templates/sitemap` folder. Templates only apply to Sitemap Pages.
 
 You can specify the default template to select on the SitemapPage by adding the following to your `app.yml` file.
@@ -43,13 +45,32 @@ SitemapPage:
 If the `default_template` is not specified then the `SitemapDefault` template will be used.
 
 ## Templates Syntax
-The sitemap can additionally be rendered in a Template by using the following syntax.
+
+The sitemap can additionally be rendered to a Silverstripe Template by either `include Sitemap` or `include SitemapRecursive`.
+
+The following syntax will display the entire Sitemap (and cache it):
 
 ```php
 <% include Sitemap %>
 ```
 
+To include pages from a specific Page node based on the Page Link onwards use the following syntax:
+
+```php
+<% include SitemapRecursive Parent=$Page('PageLink') %>
+```
+
+To include pages from a specific Page node based on the Pages children use the following syntax:
+
+```php
+<% include SitemapRecursive Parent=$Page('PageLink').SiteMapChildren %>
+```
+
+## Silverstripe Tasks
+
+
 ## License
+
 BSD 3-Clause License, see [License](license.md)
 
 Copyright Florian Thoma
