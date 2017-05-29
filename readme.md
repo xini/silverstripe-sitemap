@@ -26,7 +26,7 @@ Then run `dev/build`.
 
 ## Documentation
 
-- [Installation](installation.md)
+- [Installation](docs/en/installation.md)
 - [User Guide](docs/en/userguide/index.md)
 
 ## License

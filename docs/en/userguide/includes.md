@@ -1,10 +1,16 @@
-# Silverstripe Sitemap Module User Guide
+# Sitemap User Guide
 
 Includes - [Return to Contents](index.md)
 
 ## Summary
 
 The sitemap can be rendered in a Silverstripe Template by including the `Sitemap` or `SitemapRecursive` templates.
+
+The `SitemapRecursive` include supports the following arguments
+
+Name   | Description
+------ | -----------
+Parent | *SiteTree* or *Page*. Render the Sitemap for this item and its children.
 
 ## Examples
 

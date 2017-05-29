@@ -1,4 +1,4 @@
-# Silverstripe Sitemap Module User Guide
+# Sitemap User Guide
 
 Documentation by Stewart Cossey
 
