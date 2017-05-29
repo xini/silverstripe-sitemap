@@ -9,7 +9,7 @@ Adds a page type that automatically builds a sitemap from the view tree based on
 
 The module adds a new checkbox to the Settings tab of each page, where visibility of the page in the sitemap can be controlled.
 
-The module supports the [multisites module] (https://github.com/silverstripe-australia/silverstripe-multisites) and by default shows all pages from the current site.
+The module supports the [multisites module](https://github.com/silverstripe-australia/silverstripe-multisites) and by default shows all pages from the current site.
 
 ## Requirements
 
@@ -25,17 +25,26 @@ or download or git clone the module into a ‘sitemap’ directory in your webro
 
 Then run `dev/build`.
 
-## Configuration
+## Sitemap Pages
 
-Sitemap templates are stored in `/sitemap/templates/sitemap`.
+### Sitemap Output
+By default the Sitemap will render to the `$Sitemap` variable in the Content field. If the variable is ommitted then the Sitemap will render to the `$Form` variable.
 
-You can specify the default template to select on the SitemapPage by adding the following to your `app.yml` file. If unspecified the default `SitemapDefault` will be selected.
+### Templates
+Sitemap templates are stored in `/sitemap/templates/sitemap`. Templates only apply to Sitemap Pages.
+
+You can specify the default template to select on the SitemapPage by adding the following to your `app.yml` file.
 
 ```YAML
 SitemapPage:
   default_template: 'SitemapContentPreview'
 ```
 
-## License
+If the `default_template` is not specified then the default `SitemapDefault` template will be used.
 
+## License
 BSD 3-Clause License, see [License](license.md)
+Copyright Florian Thoma
+Contributions by Stewart Cossey
+
+
