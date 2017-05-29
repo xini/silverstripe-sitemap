@@ -29,7 +29,7 @@ Then run `dev/build`.
 
 Sitemap templates are stored in `/sitemap/templates/sitemap`.
 
-You can specify the default template to select on the SitemapPage or the default `SitemapDefault` will be selected.
+You can specify the default template to select on the SitemapPage by adding the following to your `app.yml` file. If unspecified the default `SitemapDefault` will be selected.
 
 ```YAML
 SitemapPage:
