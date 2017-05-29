@@ -72,12 +72,12 @@ There is a Task at `dev/tasks/ShowInSitemapUpdateTask` which can Show or Hide al
 
 The following query strings can be used in the task:
 
-Name     | Value
--------- | ----------
-enable   | 2 false
-           1, true
-publish  | 0, false
-           1, true
+Name     | Value    | Description
+-------- | -------- | -------------------------------------------------------------
+enable   | 0, false | Check all unchecked Pages "Show in Sitemap" setting
+         | 1, true  | Uncheck all checked Pages "Show in Sitemap" setting *Default*
+publish  | 0, false | Save affected pages as Draft *Default*
+         | 1, true  | Publish the affected pages
 
 ## License
 
