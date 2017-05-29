@@ -68,6 +68,17 @@ To include pages from a specific Page node based on the Pages children use the f
 
 ## Silverstripe Tasks
 
+There is a Task at `dev/tasks/ShowInSitemapUpdateTask` which can Show or Hide all Pages in the Sitemap (Show in Sitemap?).
+
+The following query strings can be used in the task:
+
+Name     | Value
+-------- | ----------
+enable   | 0, false
+         | 1, true
+-------- | ----------
+publish  | 0, false
+         | 1, true
 
 ## License
 

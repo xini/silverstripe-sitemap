@@ -4,7 +4,7 @@ class ShowInSitemapUpdateTask extends BuildTask {
 	
 	protected $title = 'Show or Hide All Pages In Sitemap';
 	
-	protected $description = 'Show or Hide In Sitemap for all pages. Can also Publish those pages. Does not affect SitemapPage or ErrorPages';
+	protected $description = 'Show or Hide In Sitemap for all pages. Can also Publish those pages. Does not affect Sitemap Pages or Error Pages';
 	
 	protected $enabled = true;
 	
