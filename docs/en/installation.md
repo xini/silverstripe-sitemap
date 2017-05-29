@@ -1,6 +1,6 @@
 # Installating this Sitemap Module
 
-he preferred method of installation is via composer.
+The preferred method of installation is via composer.
 
 ```sh
 $ composer require innoweb/silverstripe-sitemap dev-master
