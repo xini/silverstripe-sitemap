@@ -1,4 +1,3 @@
-<% cached 'sitemap', ID, List(SiteTree).max(LastEdited), List(SiteTree).count() %>
 <% if SiteMapRootItems %>
 	<ul class="sitemap">
 		<% loop SiteMapRootItems %>
@@ -35,4 +34,3 @@
 		<% end_loop %>
 	</ul>
 <% end_if %>
-<% end_cached %>
