@@ -17,8 +17,8 @@
 ## Installation
 
 Install the module using composer:
-```
-composer require innoweb/silverstripe-sitemap dev-master
+```sh
+$ composer require innoweb/silverstripe-sitemap dev-master
 ```
 or download or git clone the module into a ‘sitemap’ directory in your webroot.
 
