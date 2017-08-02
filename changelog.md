@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.3]
+
+* fix icon static url
+
 ## [1.0.2]
 
 * add icon static to SitemapPage
