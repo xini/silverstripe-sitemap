@@ -2,6 +2,10 @@
  
 class SitemapPage extends Page {
 	
+    private static $singular_name = "Sitemap Page";
+    private static $plural_name = "Sitemap Pages";
+    private static $description = "Page type showing a sitemap of the current site.";
+
 	private static $defaults = array(
 		'ShowInMenus' => false,
 		'ShowInSearch' => false,
