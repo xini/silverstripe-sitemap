@@ -5,6 +5,8 @@ class SitemapPage extends Page {
     private static $singular_name = "Sitemap Page";
     private static $plural_name = "Sitemap Pages";
     private static $description = "Page type showing a sitemap of the current site.";
+	
+	private static $icon  = '/sitemap/images/treeicons/sitemap.gif';
 
 	private static $defaults = array(
 		'ShowInMenus' => false,
