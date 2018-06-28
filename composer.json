@@ -1,19 +1,25 @@
 {
-	"name": "innoweb/silverstripe-sitemap",
-	"description": "Adds a page type that automatically builds a sitemap from the view tree. Works with Multisites module.",
-	"type": "silverstripe-module",
-	"license": "BSD-3-Clause",
-	"keywords": ["silverstripe", "sitemap", "multisites"],
-	"authors": [{
-		"name": "Florian Thoma",
-		"homepage": "http://www.innoweb.com.au"
-	}],
-	"require":
-	{
-		"silverstripe/framework": "~3.2",
-		"silverstripe/cms": "~3.2"
-	},
-	"extra": {
-		"installer-name": "sitemap"
-	}
+    "name": "innoweb/silverstripe-sitemap",
+    "description": "Adds a page type that automatically builds a sitemap from the view tree. Works with Multisites module.",
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "keywords": ["silverstripe", "sitemap", "multisites"],
+    "authors": [{
+        "name": "Florian Thoma",
+        "homepage": "http://www.innoweb.com.au"
+    }],
+    "require":
+    {
+        "silverstripe/cms": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Innoweb\\Sitemap\\": "src/"
+        }
+    },
+    "extra": {
+        "expose": [
+            "client"
+        ]
+    }
 }

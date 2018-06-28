@@ -1,8 +1,6 @@
-SiteTree:
+---
+Name: innowebsitemap
+---
+SilverStripe\CMS\Model\SiteTree:
   extensions:
-    - SitemapSiteTreeExtension
-SitemapPage:
-  singular_name: 'Sitemap Page'
-  plural_name: 'Sitemap Pages'
-  description: 'Displays a sitemap with all pages marked for display in the sitemap.'
-  icon: 'sitemap/images/treeicons/sitemap.gif'
+    - Innoweb\Sitemap\Extensions\SitemapSiteTreeExtension

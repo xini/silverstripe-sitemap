@@ -13,7 +13,9 @@ The module supports the [multisites module](https://github.com/symbiote/silverst
 
 ## Requirements
 
-* SilverStripe CMS ~3.2
+* SilverStripe CMS 4.x
+
+Note: this version is compatible with SilverStripe 4. For SilverStripe 3, please see the [1.x release line](https://github.com/xini/silverstripe-sitemap/tree/1).
 
 ## Installation
 
