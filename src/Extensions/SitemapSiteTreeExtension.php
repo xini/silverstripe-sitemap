@@ -2,6 +2,7 @@
 
 namespace Innoweb\Sitemap\Extensions;
 
+use Innoweb\Sitemap\Pages\SitemapPage;
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\CMS\Model\SiteTreeExtension;
 use SilverStripe\Forms\CheckboxField;

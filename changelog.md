@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.1]
+
+* add missing use statement
+
 ## [2.1.0]
 
 * added filter config to exclude certain page types from showing on the sitemap
