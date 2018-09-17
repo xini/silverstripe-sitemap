@@ -13,6 +13,8 @@ class SitemapPage extends \Page {
     private static $table_name = 'SitemapPage';
 
     private static $icon  = 'innoweb/silverstripe-sitemap: client/images/treeicons/sitemap.gif';
+	
+	private static $excluded_pagetypes = [];
 
     private static $defaults = [
         'ShowInMenus'   => false,
@@ -28,10 +30,14 @@ class SitemapPage extends \Page {
         } else {
             $parent = 0;
         }
-        $items = SiteTree::get()->filter([
-            'ParentID'      =>  $parent,
-            'ShowInSitemap' =>  1
-        ]);
+        $filter = [
+            'ParentID'       =>  $parent,
+            'ShowInSitemap'  =>  1,
+        ];
+        if (count(self::config()->get('excluded_pagetypes'))) {
+            $filter['ClassName:not'] = self::config()->get('excluded_pagetypes');
+        }
+        $items = SiteTree::get()->filter($filter);
         return $items;
     }
 

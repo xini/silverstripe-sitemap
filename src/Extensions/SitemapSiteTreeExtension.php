@@ -18,23 +18,27 @@ class SitemapSiteTreeExtension extends SiteTreeExtension {
 
     public function updateSettingsFields(&$fields)
     {
-        $fields->addFieldToTab(
-            'Root.Settings',
-            CheckboxField::create(
-                'ShowInSitemap',
-                _t('SitemapDecorator.SHOWINSITEMAP', 'Show in sitemap?')
-            ),
-            'ShowInSearch'
-        );
-
+        if (!in_array($this->owner->ClassName, SitemapPage::config()->get('excluded_pagetypes'))) {
+            $fields->addFieldToTab(
+                'Root.Settings',
+                CheckboxField::create(
+                    'ShowInSitemap',
+                    _t('SitemapDecorator.SHOWINSITEMAP', 'Show in sitemap?')
+                ),
+                'ShowInSearch'
+            );
+        }
     }
 
     public function SitemapChildren()
     {
-        $children = $this->owner->AllChildren()
-            ->filter([
-                'ShowInSitemap' => '1'
-            ]);
+        $filter = [
+            'ShowInSitemap' => '1',
+        ];
+        if (count(SitemapPage::config()->get('excluded_pagetypes'))) {
+            $filter['ClassName:not'] = SitemapPage::config()->get('excluded_pagetypes');
+        }
+        $children = $this->owner->AllChildren()->filter($filter);
         return $children;
     }
 
