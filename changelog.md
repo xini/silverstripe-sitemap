@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.0]
+
+* added filter config to exclude certain page types from showing on the sitemap
+* changed template structure to allow hooks for root elements
+* removed link title attributes in templates
+
 ## [2.0.0]
 
 * upgraded for SilverStripe 4 compatibility
