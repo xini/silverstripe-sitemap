@@ -1,0 +1,4 @@
+mappings:
+  SitemapPage: Innoweb\Sitemap\Pages\SitemapPage
+  SitemapPage_Controller: Innoweb\Sitemap\Pages\SitemapPageController
+  SitemapSiteTreeExtension: Innoweb\Sitemap\Extensions\SitemapSiteTreeExtension
