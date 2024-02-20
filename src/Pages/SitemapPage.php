@@ -3,6 +3,7 @@
 namespace Innoweb\Sitemap\Pages;
 
 use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\Core\Manifest\ModuleLoader;
 
 class SitemapPage extends \Page {
 
@@ -13,7 +14,7 @@ class SitemapPage extends \Page {
     private static $table_name = 'SitemapPage';
 
     private static $icon  = 'innoweb/silverstripe-sitemap: client/images/treeicons/sitemap.gif';
-	
+
 	private static $excluded_pagetypes = [];
 
     private static $defaults = [
@@ -25,7 +26,11 @@ class SitemapPage extends \Page {
 
     public function SitemapRootItems()
     {
-        if (class_exists('Symbiote\Multisites\Multisites')) {
+        $manifest = ModuleLoader::inst()->getManifest();
+        $isMultisites = $manifest->moduleExists('symbiote/silverstripe-multisites')
+            || $manifest->moduleExists('fromholdio/silverstripe-configured-multisites');
+
+        if ($isMultisites) {
             $parent = $this->SiteID;
         } else {
             $parent = 0;

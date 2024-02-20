@@ -9,7 +9,7 @@ Adds a page type that automatically builds a sitemap from the view tree.
 
 The module adds a new checkbox to the Settings tab of each page, where visibility of the page in the sitemap can be controlled.
 
-The module supports the [multisites module](https://github.com/symbiote/silverstripe-multisites) and by default shows all pages from the current site.
+The module supports the [multisites](https://github.com/symbiote/silverstripe-multisites) and [configured-multisites](https://github.com/fromholdio/silverstripe-configured-multisites) modules, and by default shows all pages from the current site.
 
 ## Requirements
 
