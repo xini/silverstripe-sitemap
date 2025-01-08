@@ -19,7 +19,7 @@ class SitemapPage extends \Page {
 
     private static $defaults = [
         'ShowInMenus'   => false,
-        'ShowInSearch'  => false,
+        'ShowInSearch'  => true,
         'ShowInSitemap' => false,
         'Priority'      => '1.0',
     ];
