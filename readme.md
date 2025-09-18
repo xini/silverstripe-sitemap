@@ -13,9 +13,10 @@ The module supports the [multisites](https://github.com/symbiote/silverstripe-mu
 
 ## Requirements
 
-* SilverStripe CMS 5.x
+* SilverStripe CMS 6.x
 
-Note: this version is compatible with SilverStripe 5.
+Note: this version is compatible with SilverStripe 6.
+For Silverstripe 4, please see the [3.x release line](https://github.com/xini/silverstripe-sitemap/tree/3).
 For Silverstripe 4, please see the [2.x release line](https://github.com/xini/silverstripe-sitemap/tree/2).
 For SilverStripe 3, please see the [1.x release line](https://github.com/xini/silverstripe-sitemap/tree/1).
 
