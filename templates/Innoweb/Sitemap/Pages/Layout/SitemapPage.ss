@@ -1,10 +1,12 @@
-<% include SideBar %>
-<div class="content-container unit size3of4 lastUnit">
-    <article>
-        <h1>$Title</h1>
-        <div class="content">$Content</div>
-        <% include Innoweb/Sitemap/Sitemap %>
-    </article>
+<div class="page__content">
+    <h1 class="page__title">$Title</h1>
+    $Content
+    $ElementalArea
+    <% include Innoweb/Sitemap/Sitemap %>
     $Form
-    $CommentsForm
 </div>
+<% if $PageLevel == 1 && $Children %>
+    <% include LevelOneSidebar %>
+<% else_if $PageLevel > 1 && $Menu($PageLevel).count > 1 %>
+    <% include Sidebar %>
+<% end_if %>
