@@ -1,4 +1,4 @@
-# SilverStripe Sitemap
+# Silverstripe Sitemap
 
 [![Version](http://img.shields.io/packagist/v/innoweb/silverstripe-sitemap.svg?style=flat-square)](https://packagist.org/packages/innoweb/silverstripe-sitemap)
 [![License](http://img.shields.io/packagist/l/innoweb/silverstripe-sitemap.svg?style=flat-square)](license.md)
@@ -13,12 +13,11 @@ The module supports the [multisites](https://github.com/symbiote/silverstripe-mu
 
 ## Requirements
 
-* SilverStripe CMS 6.x
+* Silverstripe CMS 6.x
 
-Note: this version is compatible with SilverStripe 6.
-For Silverstripe 4, please see the [3.x release line](https://github.com/xini/silverstripe-sitemap/tree/3).
-For Silverstripe 4, please see the [2.x release line](https://github.com/xini/silverstripe-sitemap/tree/2).
-For SilverStripe 3, please see the [1.x release line](https://github.com/xini/silverstripe-sitemap/tree/1).
+Note: this version is compatible with Silverstripe 6.
+
+For Silverstripe 5, please see the [3.x release line](https://github.com/xini/silverstripe-sitemap/tree/3).
 
 ## Installation
 

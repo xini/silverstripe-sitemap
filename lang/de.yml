@@ -1,7 +1,11 @@
 de:
-  SitemapDecorator:
+  Innoweb\Sitemap\Extensions\SitemapSiteTreeExtension:
     SHOWINSITEMAP: 'In Sitemap zeigen?'
-  SitemapPage:
-    DESCRIPTION: 'Zeigt eine Sitemap mit allen Seiten die zur Anzeige in der Sitemap markiert sind. Es kann nur eine Seite dieses Typs erstellt werden.'
+    db_ShowInSitemap: 'In Sitemap zeigen?'
+  Innoweb\Sitemap\Pages\SitemapPage:
+    CLASS_DESCRIPTION: 'Zeigt eine Sitemap mit allen Seiten die zur Anzeige in der Sitemap markiert sind.'
     PLURALNAME: 'Sitemap Seiten'
+    PLURALS:
+      one: 'Eine Sitemap Seite'
+      other: '{count} Sitemap Seiten'
     SINGULARNAME: 'Sitemap Seite'

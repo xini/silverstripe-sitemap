@@ -9,7 +9,7 @@ class SitemapPage extends \Page {
 
     private static $singular_name = 'Sitemap Page';
     private static $plural_name = 'Sitemap Pages';
-    private static $description = 'Displays a sitemap with all pages marked for display in the sitemap.';
+    private static $class_description = 'Displays a sitemap with all pages marked for display in the sitemap.';
 
     private static $table_name = 'SitemapPage';
 

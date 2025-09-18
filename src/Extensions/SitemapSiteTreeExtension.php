@@ -29,7 +29,7 @@ class SitemapSiteTreeExtension extends Extension {
                 'Root.Settings',
                 CheckboxField::create(
                     'ShowInSitemap',
-                    _t('SitemapDecorator.SHOWINSITEMAP', 'Show in sitemap?')
+                    _t(__CLASS__ . '.SHOWINSITEMAP', 'Show in sitemap?')
                 ),
                 'ShowInSearch'
             );
