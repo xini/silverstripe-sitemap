@@ -17,6 +17,11 @@ class SitemapSiteTreeExtension extends Extension {
         'ShowInSitemap' => true,
     ];
 
+    public function updateCMSFields(&$fields)
+    {
+        $fields->removeByName('ShowInSitemap');
+    }
+
     public function updateSettingsFields(&$fields)
     {
         if (!in_array($this->getOwner()->ClassName, SitemapPage::config()->get('excluded_pagetypes'))) {
