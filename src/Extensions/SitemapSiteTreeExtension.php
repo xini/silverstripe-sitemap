@@ -10,7 +10,7 @@ use SilverStripe\Forms\CheckboxField;
 class SitemapSiteTreeExtension extends SiteTreeExtension {
 
     private static $db = [
-        'ShowInSitemap' => 'Boolean'
+        'ShowInSitemap' => 'Boolean(1)'
     ];
 
     private static $defaults = [

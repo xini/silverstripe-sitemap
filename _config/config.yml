@@ -1,6 +1,12 @@
 ---
 Name: innowebsitemap
 ---
+
+Innoweb\Sitemap\Pages\SitemapPage:
+  excluded_pagetypes:
+    - Innoweb\Sitemap\Pages\SitemapPage
+    - SilverStripe\ErrorPage\ErrorPage
+
 SilverStripe\CMS\Model\SiteTree:
   extensions:
     - Innoweb\Sitemap\Extensions\SitemapSiteTreeExtension

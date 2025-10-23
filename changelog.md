@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.2.0]
+
+* change default for ShowInSitemap for all pages to true
+* add ErrorPage and SitemapPage to excluded page types
+
 ## [3.1.1]
 
 * change default ShowInSearch for sitemap pages to true
